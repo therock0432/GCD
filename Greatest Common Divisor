@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;//GCD
+int main()
+{
+    long long int a,b,x;
+    cin>>a>>b;
+    long long int max,min;
+    if(a>b)
+   {
+     max=a;
+     min=b;
+   }
+     else
+   {
+    max=b;
+    min=a;
+   }
+     for(long long int i=max;i>0;i--)
+     {
+      if(max%i==0 && min%i==0)
+         {
+         x=i;
+         break;
+         }
+     }
+     cout<<x;
+     return 0;
+}
